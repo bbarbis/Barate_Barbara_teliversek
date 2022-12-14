@@ -22,7 +22,9 @@ h1{
 nav{
     grid-area: n;
     background-color: white;
-    gap: 10%;
+    margin: 0px 10px 0px 100px;
+    gap: 10px;
+  
 }
 .menu ul{
   text-decoration: none;
@@ -88,14 +90,15 @@ nav{
     color: white;
     text-decoration: none;
     list-style-type: none;
-    
-    
   }
 
+.menu a:active{
+  color: blue;
+}
 article{
     grid-area: a;
     background-color: white;
-    gap: 20px;
+    
 }
 aside{
     grid-area: as;
