@@ -2,16 +2,14 @@ body{
     background-image: url(kepek/hatter.jpg);
 }
 main{
-        display: grid;
+    display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 85%;
+        width: 75%;
         margin: auto;
         grid-template-areas: 
-                            "h   h   h"
-                            "n   a   as"
-                            "f   f   f";
-    
-
+                            "h h h"
+                            "n a as"
+                            "f f f"
 }
 header{
     grid-area: h;
@@ -19,32 +17,81 @@ header{
 }
 h1{
     color: white;
-    
+    text-align: center
 }
 nav{
     grid-area: n;
     background-color: white;
+    gap: 10%;
 }
- 
+.menu ul{
+  text-decoration: none;
+    list-style-type: none;
+    
+}
+.menu1{
+  border: 2px solid rgb(7, 113, 211);
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  list-style-type: none;
+  width: 200px;
+  background-color: rgb(7, 113, 211);
   
-  /* visited link */
- a:visited {
-    color: green;
+}
+.menu2{
+  border: 2px solid rgb(7, 113, 211);
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  list-style-type: none;
+  width: 200px;
+  background-color: rgb(7, 113, 211);
+}
+.menu3{
+  border: 2px solid rgb(7, 113, 211);
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  list-style-type: none;
+  width: 200px;
+  background-color: rgb(7, 113, 211);
+}
+.menu4{
+  border: 2px solid rgb(7, 113, 211);
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  list-style-type: none;
+  width: 200px;
+  background-color: rgb(7, 113, 211);
+  
+}
+
+
+.menu li a {
+    display: block;
+    color: rgb(7, 113, 211);
     text-decoration: none;
+    list-style-type: none;
+   
+    
   }
   
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
+.menu a:visited{
+  color: white;
+  text-decoration: none;
+    list-style-type: none;
+}
+.menu li a:hover {
+    background-color:rgb(7, 113, 211);
+    color: white;
     text-decoration: none;
+    list-style-type: none;
+    
+    
   }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-    text-decoration: none;
-  }
-  
+
 article{
     grid-area: a;
     background-color: white;
@@ -98,3 +145,43 @@ tbody tr:nth-child(odd){
     background-color: white;
 
 }
+@media screen and (max-width: 900px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "f";
+    }
+    
+  }
+  @media screen and (max-width: 700px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      grid-template-areas:
+        "h  h"
+        "n a as"
+        "f   f";
+    }
+    
+  }
+  @media screen and (max-width: 300px) {
+    /*menu keruljon a fejlec ala*/
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "f";
+    }
+  }
