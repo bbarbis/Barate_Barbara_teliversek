@@ -6,6 +6,7 @@ main{
         grid-template-columns: 1fr 1fr 1fr;
         width: 75%;
         margin: auto;
+        padding: 0px;
         grid-template-areas: 
                             "h h h"
                             "n a as"
@@ -22,96 +23,100 @@ h1{
 nav{
     grid-area: n;
     background-color: white;
-    margin: 0px 10px 0px 100px;
-    gap: 10px;
+    
   
 }
 .menu ul{
   text-decoration: none;
-    list-style-type: none;
-    
+  list-style-type: none;
+  
 }
 .menu1{
-  border: 2px solid rgb(7, 113, 211);
-  border-radius: 8px;
-  padding: 5px;
-  text-align: center;
-  list-style-type: none;
-  width: 200px;
-  background-color: rgb(7, 113, 211);
-  
+border: 2px solid rgb(7, 113, 211);
+border-radius: 10px;
+padding: 5px;
+text-align: center;
+list-style-type: none;
+width: 200px;
+background-color: rgb(7, 113, 211);
+
 }
 .menu2{
-  border: 2px solid rgb(7, 113, 211);
-  border-radius: 8px;
-  padding: 5px;
-  text-align: center;
-  list-style-type: none;
-  width: 200px;
-  background-color: rgb(7, 113, 211);
+border: 2px solid rgb(7, 113, 211);
+border-radius: 10px;
+padding: 5px;
+text-align: center;
+list-style-type: none;
+width: 200px;
+background-color: rgb(7, 113, 211);
 }
 .menu3{
-  border: 2px solid rgb(7, 113, 211);
-  border-radius: 8px;
-  padding: 5px;
-  text-align: center;
-  list-style-type: none;
-  width: 200px;
-  background-color: rgb(7, 113, 211);
+border: 2px solid rgb(7, 113, 211);
+border-radius: 10px;
+padding: 5px;
+text-align: center;
+list-style-type: none;
+width: 200px;
+background-color: rgb(7, 113, 211);
 }
 .menu4{
-  border: 2px solid rgb(7, 113, 211);
-  border-radius: 8px;
-  padding: 5px;
-  text-align: center;
-  list-style-type: none;
-  width: 200px;
-  background-color: rgb(7, 113, 211);
-  
+border: 2px solid rgb(7, 113, 211);
+border-radius: 10px;
+padding: 5px;
+text-align: center;
+list-style-type: none;
+width: 200px;
+background-color: rgb(7, 113, 211);
+
 }
 
 
 .menu li a {
-    display: block;
-    color: rgb(7, 113, 211);
-    text-decoration: none;
-    list-style-type: none;
-   
-    
-  }
-  
-.menu a:visited{
-  color: white;
+  display: block;
+  color: rgb(7, 113, 211);
   text-decoration: none;
-    list-style-type: none;
+  list-style-type: none;
+  margin: 2px;
+}
+
+.menu a:visited{
+color: white;
+text-decoration: none;
+  list-style-type: none;
 }
 .menu li a:hover {
-    background-color:rgb(7, 113, 211);
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-  }
+  background-color:rgb(7, 113, 211);
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
 
 .menu a:active{
-  color: blue;
+color: blue;
 }
+
 article{
     grid-area: a;
     background-color: white;
+    padding: 2px;
+    
     
 }
 aside{
     grid-area: as;
     background-color: white;
     border: 1px solid gray;
-    
     gap: 20px;
+    padding:60px;
+    
 }
 .vers{
     margin: 55px;
     text-align: left;
     letter-spacing: normal;
     word-spacing: -2px;
+    text-align: left;
+    
     
 }
 footer{
@@ -124,6 +129,7 @@ table{
     width: 100%;
     /* cellaszegélyek közti rés eltüntetése */
     border-collapse: collapse;
+    text-align: center;
     
     
 }
@@ -148,7 +154,7 @@ tbody tr:nth-child(odd){
     background-color: white;
 
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     main {
       display: grid;
       grid-template-columns: 1fr 1fr;
