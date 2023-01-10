@@ -1,36 +1,37 @@
 body{
-    background-image: url(kepek/hatter.jpg);
+  background-image: url(kepek/hatter.jpg);
+  max-width: 900px;
+  margin: auto;
 }
 main{
-    display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 75%;
-        margin: auto;
-        padding: 0px;
-        grid-template-areas: 
-                            "h h h"
-                            "n a as"
-                            "f f f"
+display: grid;
+grid-template-areas: "h h h"
+                      "n a as"
+                      "f f f";
+background-color: white;
 }
 header{
-    grid-area: h;
-    background-image: url(kepek/fejlec.jpg);
-}
-h1{
-    color: white;
-    text-align: center
+  grid-area: h;
+  background-image: url(kepek/fejlec.jpg);
+text-align: center;
+  text-shadow: 2px 2px gray;
+  padding-top: 20px;
 }
 nav{
-    grid-area: n;
-    background-color: white;
-    
-  
+  grid-area: n;
+  background-color: white;
 }
+
+h1{
+  color: white;
+  text-align: center
+}
+
 .menu ul{
-  text-decoration: none;
-  list-style-type: none;
-  
+text-decoration: none;
+list-style-type: none;
 }
+
 .menu1{
 border: 2px solid rgb(7, 113, 211);
 border-radius: 10px;
@@ -39,8 +40,8 @@ text-align: center;
 list-style-type: none;
 width: 200px;
 background-color: rgb(7, 113, 211);
-
 }
+
 .menu2{
 border: 2px solid rgb(7, 113, 211);
 border-radius: 10px;
@@ -50,6 +51,7 @@ list-style-type: none;
 width: 200px;
 background-color: rgb(7, 113, 211);
 }
+
 .menu3{
 border: 2px solid rgb(7, 113, 211);
 border-radius: 10px;
@@ -59,6 +61,7 @@ list-style-type: none;
 width: 200px;
 background-color: rgb(7, 113, 211);
 }
+
 .menu4{
 border: 2px solid rgb(7, 113, 211);
 border-radius: 10px;
@@ -67,28 +70,27 @@ text-align: center;
 list-style-type: none;
 width: 200px;
 background-color: rgb(7, 113, 211);
-
 }
 
-
 .menu li a {
-  display: block;
-  color: rgb(7, 113, 211);
-  text-decoration: none;
-  list-style-type: none;
-  margin: 2px;
+display: block;
+color: white;
+text-decoration: none;
+list-style-type: none;
+margin: 2px;
 }
 
 .menu a:visited{
 color: white;
 text-decoration: none;
-  list-style-type: none;
+list-style-type: none;
 }
+
 .menu li a:hover {
-  background-color:rgb(7, 113, 211);
-  color: white;
-  text-decoration: none;
-  list-style-type: none;
+background-color:rgb(7, 113, 211);
+color: white;
+text-decoration: none;
+list-style-type: none;
 }
 
 .menu a:active{
@@ -96,101 +98,67 @@ color: blue;
 }
 
 article{
-    grid-area: a;
-    background-color: white;
-    padding: 2px;
-    
-    
+  grid-area: a;
+  background-color: white;
+  padding: 2px;
 }
+
 aside{
-    grid-area: as;
-    background-color: white;
-    border: 1px solid gray;
-    gap: 20px;
-    padding:60px;
-    
+background-color: white;
+grid-area: as;
+text-align: justify;
+border: 1px solid black;
+padding-top: 40px;
+padding-bottom: 400px;
+padding-left: 20px;
+padding-right: 20px;
+  
 }
 .vers{
-    margin: 55px;
-    text-align: left;
-    letter-spacing: normal;
-    word-spacing: -2px;
-    text-align: left;
-    
-    
+  margin: 55px;
+  text-align: left;
+  letter-spacing: normal;
+  word-spacing: -2px;
+  text-align: left;
 }
+
 footer{
-    grid-area: f;
-    background-color: rgb(7, 113, 211);
-    text-align: center;
-    
+  grid-area: f;
+  background-color: rgb(7, 113, 211);
+  text-align: center;  
 }
+
 table{
-    width: 100%;
-    /* cellaszegélyek közti rés eltüntetése */
-    border-collapse: collapse;
-    text-align: center;
-    
-    
+  width: 100%;
+  /* cellaszegélyek közti rés eltüntetése */
+  border-collapse: collapse;
+  text-align: center;
 }
 
 td, th{
-    
-    border-bottom: 2px solid rgb(53, 164, 238) ;
+  
+  border-bottom: 2px solid rgb(53, 164, 238) ;
 }
 th{
-    color: black;
-    font-variant: small-caps;
-    background-color: rgb(202, 245, 245);
-
-    
+  color: black;
+  font-variant: small-caps;
+  background-color: rgb(202, 245, 245);
 }
+
 tbody tr:nth-child(even){
-    
-    background-color: rgb(202, 245, 245);
-
+  background-color: rgb(202, 245, 245);
 }
+
 tbody tr:nth-child(odd){
-    background-color: white;
-
+  background-color: white;
 }
-@media screen and (max-width: 700px) {
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      grid-template-areas:
-        "h"
-        "n"
-        "a"
-        "as"
-        "f";
-    }
-    
-  }
-  @media screen and (max-width: 700px) {
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      grid-template-areas:
-        "h  h"
-        "n a as"
-        "f   f";
-    }
-    
-  }
-  @media screen and (max-width: 300px) {
-    /*menu keruljon a fejlec ala*/
-    main {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-      grid-template-areas:
-        "h"
-        "n"
-        "a"
-        "as"
-        "f";
-    }
-  }
+
+@media screen and (max-width:600px){
+main{
+ grid-template-areas:"h"
+            "n"
+                    "a"
+                    "as"
+                    "f";
+}
+}
